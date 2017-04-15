@@ -1,5 +1,5 @@
 .cuerpo{
-    background-color: darkgray;
+    background-color: #2a2a2a;
     text-align: center;
 }
 
@@ -10,4 +10,5 @@
     margin-top: 20%;
     font-size: 100px;
     font-family: Consolas, Comic Sans, MSsans-serif;
+    color: white;
 }
