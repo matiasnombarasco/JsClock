@@ -2,16 +2,21 @@
  * Created by Tox on 15/04/2017.
  */
 
-var horaInicio = new Date().setHours(9,0);
-var horaFin = new Date().setHours(10,0);
+var horaInicio = new Date().setHours(9);
+var horaFin = new Date().setHours(12);
 var porcentaje;
+var horalocal;
+var intervalo = 60000;
 
-var horalocal = new Date().getTime();
-
-$(document).ready(CalcularPorcentaje);
+$(document).ready(function () {
+    CalcularPorcentaje();
+    CalcularIntervalo();
+    setInterval(CalcularPorcentaje,intervalo);
+})
 
 function CalcularPorcentaje() {
 
+    horalocal = new Date().getTime();
     var total = (horaFin-horaInicio);
 
     if( horaInicio>horalocal){
@@ -26,4 +31,8 @@ function CalcularPorcentaje() {
         porcentaje = parseInt(porcentaje);
     }
     document.getElementById("porcentaje").innerHTML = porcentaje + "%";
+}
+
+function CalcularIntervalo() {
+    intervalo = (horaFin - horaInicio) / 100;
 }
