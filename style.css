@@ -1,0 +1,13 @@
+.cuerpo{
+    background-color: darkgray;
+    text-align: center;
+}
+
+.boxCenter{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    margin-top: 20%;
+    font-size: 100px;
+    font-family: Consolas, Comic Sans, MSsans-serif;
+}
