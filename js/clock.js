@@ -83,3 +83,8 @@ function LeerCookies() {
 function ActualizarCookies() {
     CrearCookie(inputHoraI,inputMinI,inputHoraF,inputMinF);
 }
+
+$('.clockpicker').clockpicker({
+    placement: 'bottom',
+    donetext: 'Listo'
+});
