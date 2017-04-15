@@ -3,12 +3,17 @@
     text-align: center;
 }
 
+@font-face {
+    font-family: mrrobot;
+    src: url(MRROBOT.ttf);
+}
+
 .boxCenter{
     margin-left: auto;
     margin-right: auto;
     background-color: transparent;
     margin-top: 20%;
     font-size: 100px;
-    font-family: Consolas, Comic Sans, MSsans-serif;
-    color: white;
+    font-family: mrrobot ,Consolas, Comic Sans, MSsans-serif;
+    color: #8b0000;
 }
