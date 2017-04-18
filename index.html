@@ -9,12 +9,12 @@
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/clock.js"></script>
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
     <title>Document</title>
 </head>
 <body class="cuerpo">
-<button type="button" class="btn btn-default btn-lg" id="botonAbajo">
+
+<button type="button" class="btn btn-default btn-lg" class="show" id="botonAbajo">
     <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
 </button>
     <div class="backgroundConfiguracion">
@@ -47,5 +47,9 @@
     </div>
 
 <div class="boxCenter" id="porcentaje"></div>
+
+jQuery("#botonAbajo").click(function () {
+jQuery("#backgroundConfiguracion").show();
+}):
 </body>
 </html>
